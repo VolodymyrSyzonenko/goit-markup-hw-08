@@ -1,0 +1,47 @@
+.header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--main-title-color);
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+    gap: 30px;
+}
+
+.header__mail,
+.header__tel {
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: 0.02em;
+    color: var(--link-color);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    transition: color var(--anim-fast);
+}
+
+.header__mail:hover,
+.header__mail:focus,
+.nav__list .link:hover,
+.nav__list .link:focus {
+    fill: var(--first-logo-color);
+    color: var(--first-logo-color);
+}
+
+.header__tel:hover,
+.header__tel:focus,
+.heder__mail:active,
+.heder__tel:active {
+    color: var(--first-logo-color);
+}
