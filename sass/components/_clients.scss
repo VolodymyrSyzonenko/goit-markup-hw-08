@@ -1,34 +1,73 @@
 .clients {
     @extend %section;
 }
+
 .clients .title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 42px;
+        padding-bottom: 30px;
+    }
 }
 
 .clients .list {
     display: flex;
-    flex-direction: row;
-    column-gap: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .clients-items {
-    width: 170px;
-    height: 92px;
-    display: flex;
-    padding: 16px 32px;
+
+    width: calc((100% - 30px) / 2);
     border-radius: 4px;
     color: rgba(175, 177, 184, 1);
     background-color: #FFFFFF;
     border: rgba(175, 177, 184, 1) 1px solid;
     cursor: pointer;
 
+    display: flex;
+    justify-content: center;
+    fill: currentColor;
+    padding: 15px 31px;
+
     transition: color var(--anim-fast), border var(--anim-fast);
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px) / 6);
+    }
 }
+
+//   @media screen and (min-width: 768px) {
+
+//   }
+
+//   @media screen and (min-width: 1200px) {
+
+//   }
+
+
+.client-icon {
+    display: flex;
+    align-items: center;
+    fill: currentColor;
+}
+
 
 .clients-items:hover,
 .clients-items:focus {
     border: var(--first-logo-color) 1px solid;
-    color: var(--first-logo-color);
 }
