@@ -11,11 +11,29 @@
 
 .header__contact {
     display: none;
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // margin-right: 0;
-    // gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        gap: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        gap: 30px;
+    }
+
+}
+
+.header__mail {
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+    }
 }
 
 .header__mail,
@@ -24,13 +42,22 @@
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: var(--link-color);
-    margin: auto;
+
     display: flex;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+
 
     transition: color var(--anim-fast);
+
+    // @media screen and (min-width: 768) {
+    //     gap: 10px;
+    // }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin: auto;
+    }
 }
 
 .header__mail:hover,

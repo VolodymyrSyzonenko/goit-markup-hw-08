@@ -1,32 +1,71 @@
 .hero {
     @include section(94px, 94px);
     background-color: var(--main-bg-color);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/about/about.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     max-width: 1600px;
+
     text-align: center;
-    padding: 200px 0;
     margin: 0 auto;
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header\ imgs@x1.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header\ imgs@2x.jpg);
+    }
+
+    @media screen and (min-width: 481px) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header\ imgm@1.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Header\ imgm@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width: 769px) {
+
+        padding: 200px 0;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Imgl@1.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/img/hero/Imgl@2x.jpg);
+        }
+    }
 }
 
 .hero__title {
-    width: 696px;
+
     margin: 0 auto 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: 42px;
+
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--first-bg-color);
+
+    @media screen and (min-width: 768px) {
+        width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 60px;
+    }
 }
 
 .button {
-    min-width: 216px;
-    padding: 10px 32px;
+    min-width: 200px;
+    padding: 10px 24px;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
