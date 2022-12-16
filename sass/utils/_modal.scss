@@ -24,9 +24,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 450px;
+    height: 609px;
 
-    width: 528px;
-    height: 581px;
     padding: 40px;
 
     background-color: #FFFFFF;
@@ -34,6 +34,13 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
     transition: transform var(--anim-fast), opacity var(--anim-fast);
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+        height: 581px;
+    }
 }
 
 .backdrop.is-hidden .modal {
@@ -166,9 +173,15 @@
 }
 
 .modal-form-agreement-desc {
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     color: var(--link-color);
     user-select: none;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;
+    }
 }
 
 .modal-form-agreement-link {

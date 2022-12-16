@@ -6,6 +6,12 @@
 .footer .container {
     display: block;
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 76px;
+    }
+
     @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
@@ -15,6 +21,10 @@
 .footer__logo-one {
     display: flex;
     justify-content: center;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: start;
+    }
 }
 
 .footer__logo-two {
@@ -35,10 +45,9 @@
 .footer__adress,
 .footer__mail,
 .footer__phone {
-
     font-style: normal;
     font-weight: 400;
-    line-height: calc(24/14);
+    line-height: 16px;
     letter-spacing: 0.03em;
     color: var(--footer-adress-color);
 
@@ -46,6 +55,7 @@
 }
 
 .footer__address {
+    text-align: center;
     margin-top: 20px;
     font-style: normal;
 
@@ -55,7 +65,11 @@
     }
 
     & li:nth-child(-n + 2) {
-        margin-bottom: 9px;
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
     }
 }
 
@@ -78,7 +92,18 @@
 
 
 .footer__socials {
-    margin-left: 70px;
+    text-align: center;
+    margin-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 0px;
+        margin-left: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
+
 }
 
 .footer__socials-items {
@@ -123,14 +148,28 @@
 .footer-form {
     display: flex;
     gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .footer-subscribe {
-    margin-left: auto;
+    text-align: center;
+    margin-top: 60px;
+
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+        margin-left: 83px;
+        margin-right: 159px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .footer-form-field {
-    display: block;
+    display: flex;
     width: 358px;
     height: 50px;
     padding: 15px 15px 15px 16px;
@@ -143,6 +182,14 @@
     outline-offset: -1px;
     transition: border var(--anim-fast), box-shadow var(--anim-fast);
     resize: none;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .colortext {
