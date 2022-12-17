@@ -1,12 +1,17 @@
 .footer {
     padding: 60px 0;
     background-color: var(--main-bg-color);
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
 }
 
 .footer .container {
     display: block;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         margin-left: 76px;
@@ -24,6 +29,7 @@
 
     @media screen and (min-width: 1200px) {
         justify-content: start;
+        margin-bottom: 28px;
     }
 }
 
@@ -70,6 +76,7 @@
 
     @media screen and (min-width: 1200px) {
         text-align: start;
+        margin-top: 0;
     }
 }
 
@@ -95,13 +102,14 @@
     text-align: center;
     margin-top: 60px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         margin-top: 0px;
         margin-left: 165px;
     }
 
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
+        margin-top: 0;
     }
 
 }

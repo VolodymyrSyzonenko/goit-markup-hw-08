@@ -2,3 +2,8 @@
     padding-top: $pt;
     padding-bottom: $pb;
 }
+
+@mixin section-hero($pt: 118px, $pb: 118px) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
