@@ -164,13 +164,14 @@
     }
 
     @media screen and (min-width: 1200px) {
+        text-align: start;
         margin-left: auto;
     }
 }
 
 .footer-form-field {
     display: flex;
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 15px 15px 16px;
 
@@ -189,6 +190,7 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
+        width: 358px;
     }
 }
 
